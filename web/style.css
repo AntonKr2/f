@@ -4,8 +4,8 @@ body{
 nav {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Если навигация сама слишком широка, она перенесется */
-    padding: 5px 10px; /* Добавьте общий отступ для nav */
+    flex-wrap: wrap; 
+    padding: 5px 10px; 
 }
 
 .logo img {
@@ -15,10 +15,10 @@ nav {
 nav ul {
 
     display: flex;
-    gap: 25px; /* Задаем расстояние между элементами списка */
+    gap: 25px; 
     list-style: none;
     margin-top: 20px;
-    flex-wrap: wrap; /* Если пункты меню не помещаются в одну строку, они переносятся */
+    flex-wrap: wrap; 
     justify-content: flex-end;
     padding-right: 600px;
 }
@@ -28,22 +28,9 @@ nav ul li a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1em;
-    /* position: relative;  УДАЛЯЕМ */
+    
 }
 
-.logo {
-    /* position: relative;  УДАЛЯЕМ, если не нужно для других целей */
-    /* margin-left: 1%;   Можно использовать padding-left на nav или margin-right на лого, чтобы контролировать расстояние */
-}
-
-/* УДАЛИТЬ ВСЕ ЭТИ ПРАВИЛА, ОНИ НАРУШАЮТ FLEXBOX */
-/*
-.mic, .teams, .copilot, .win, .xbox, .help, .reg {
-    position: relative;
-    left: ...;
-    top: ...;
-}
-*/
 
 a {
     color: black;
