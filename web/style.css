@@ -1,0 +1,94 @@
+body{
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Если навигация сама слишком широка, она перенесется */
+    padding: 5px 10px; /* Добавьте общий отступ для nav */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+
+    display: flex;
+    gap: 25px; /* Задаем расстояние между элементами списка */
+    list-style: none;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Если пункты меню не помещаются в одну строку, они переносятся */
+    justify-content: flex-end;
+    padding-right: 600px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    /* position: relative;  УДАЛЯЕМ */
+}
+
+.logo {
+    /* position: relative;  УДАЛЯЕМ, если не нужно для других целей */
+    /* margin-left: 1%;   Можно использовать padding-left на nav или margin-right на лого, чтобы контролировать расстояние */
+}
+
+/* УДАЛИТЬ ВСЕ ЭТИ ПРАВИЛА, ОНИ НАРУШАЮТ FLEXBOX */
+/*
+.mic, .teams, .copilot, .win, .xbox, .help, .reg {
+    position: relative;
+    left: ...;
+    top: ...;
+}
+*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.body{
+    position: relative;
+    background-color: blanchedalmond;
+    height: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 100px;
+    
+}
+.card3{
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce:VP5-1920x600);
+    height: 500px;
+    width: auto;
+    
+}
+.card3 h1{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.card3 p {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.card3 button{
+    background-color: #0067b8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+@media (max-width: 768px) { /* Применяется на экранах до 768px */
+    .link {
+        flex-direction: column; /* Элементы располагаются в столбец */
+    }
+    }
