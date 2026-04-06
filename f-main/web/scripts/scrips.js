@@ -1,0 +1,10 @@
+const paragraphCount = document.querySelectorAll('p').length;
+console.log(paragraphCount);
+const paragraphCount2 = document.querySelectorAll('h2').length;
+console.log(paragraphCount2);
+const body = document.querySelector('body');
+const h1 = document.querySelector('h1');
+const bodyStyles = getComputedStyle(body);
+const h1Styles = getComputedStyle(h1);
+console.log('background-color body:', bodyStyles.backgroundColor);
+console.log('font-size h1:', h1Styles.fontSize);
